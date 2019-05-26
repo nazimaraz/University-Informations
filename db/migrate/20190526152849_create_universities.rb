@@ -5,7 +5,7 @@ class CreateUniversities < ActiveRecord::Migration[5.2]
       t.text :name
       t.text :city
       t.text :web_page
-      t.text :classification
+      t.text :type
       t.datetime :founded_at
 
       t.timestamps

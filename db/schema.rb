@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2019_05_26_152849) do
     t.text "name"
     t.text "city"
     t.text "web_page"
-    t.text "classification"
+    t.text "type"
     t.datetime "founded_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

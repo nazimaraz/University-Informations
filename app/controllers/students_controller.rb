@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
         begin
             @student = Student.find(params[:id]).as_json(
                 :only => [:id, :name, :started_at],
-                :include => [:university => {:only => [:id, :name, :founded_at, :classification]}]
+                :include => [:university => {:only => [:id, :name, :founded_at, :type]}]
                 )
             render json: @student
         rescue

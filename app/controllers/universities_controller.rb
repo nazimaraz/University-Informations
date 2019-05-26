@@ -27,6 +27,6 @@ class UniversitiesController < ApplicationController
 
     private
         def university_params
-            params.require(:university).permit(:api_id, :name, :city, :web_page, :classification, :founded_at)
+            params.require(:university).permit(:api_id, :name, :city, :web_page, :type, :founded_at)
         end
 end
