@@ -24,7 +24,7 @@ class StudentsController < ApplicationController
 
     # POST /students
     def create
-        @student = Article.new(student_params)
+        @student = Student.new(student_params)
         render json: @student, status: :created
     end
 
