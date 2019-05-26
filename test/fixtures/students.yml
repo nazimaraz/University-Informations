@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  university_id: 1
+  name: MyText
+  started_at: 2019-05-26 18:20:40
+
+two:
+  university_id: 1
+  name: MyText
+  started_at: 2019-05-26 18:20:40
