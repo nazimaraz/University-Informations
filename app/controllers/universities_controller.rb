@@ -2,14 +2,21 @@ class UniversitiesController < ApplicationController
 
     # GET /universities
     def index
-        @universities = University.all
+        @universities = University.select("id", "name")
         render json: @universities
     end
 
     # GET /universities/:id
     def show
-        @university = University.find(params[:id])
-        render json: @university
+        begin
+            @university = University.find(params[:id]).as_json(
+                except: [:created_at, :updated_at],
+                include: {students: {only: [:id, :name, :started_at]}}
+            )
+            render json: @university
+        rescue
+            render json: {"status": "error", "message": params[:id] + " numaralı üniversite kaydı bulunamadı"}
+        end
       end
 
     # POST /universities
