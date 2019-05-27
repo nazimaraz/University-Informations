@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2019_05_26_152849) do
 
   create_table "students", force: :cascade do |t|
     t.integer "university_id"
-    t.text "name"
-    t.datetime "started_at"
+    t.text "name", null: false
+    t.datetime "started_at", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
