@@ -42,6 +42,7 @@ class StudentsController < ApplicationController
             if university.present?
                 student_save(params['name'], time, university.id)
             else
+                require 'net/http'
                 source = 'https://gitlab.com/kodiasoft/intern/2019/snippets/1859421/raw'
                 resp = Net::HTTP.get_response(URI.parse(source))
                 data = resp.body
