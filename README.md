@@ -1,24 +1,12 @@
-# README
+# University Informations
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bu rest api ile üniversiteleri ve öğrencileri listeleme,  üniversitelerin ve öğrencilerin ayrıntılarını görme, ve yeni öğrenci oluşturup, oluşturulan öğrenciyi üniversiteye kaydetme yapılabilir.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Kullanım
+| HTTP Verbs    | Paths                        | Used for                 |
+| ------------- |:----------------------------:| ------------------------:|
+| GET           | /universtities               | Get all universities     |
+| GET           | /universities/:university_id | Show a single university |
+| GET           | /students                    | Get all students         |
+| POST          | /students                    | Create a new student     |
+| GET           | /students/:student_id        | Show a single student    |
