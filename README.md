@@ -10,3 +10,12 @@ Bu rest api ile üniversiteleri ve öğrencileri listeleme,  üniversitelerin ve
 | GET           | /students                    | Get all students         |
 | POST          | /students                    | Create a new student     |
 | GET           | /students/:student_id        | Show a single student    |
+
+### Kurulum
+
+```
+git clone https://github.com/nazimaraz/University-Informations/
+cd University-Informations/
+rails db:migrate
+rails serve
+```
