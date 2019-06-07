@@ -5,7 +5,7 @@ Bu rest api ile üniversiteleri ve öğrencileri listeleme,  üniversitelerin ve
 ## Kullanım
 | HTTP Verbs    | Paths                        | Used for                 |
 | ------------- |:----------------------------:| ------------------------:|
-| GET           | /universtities               | Get all universities     |
+| GET           | /universities               | Get all universities     |
 | GET           | /universities/:university_id | Show a single university |
 | GET           | /students                    | Get all students         |
 | POST          | /students                    | Create a new student     |
