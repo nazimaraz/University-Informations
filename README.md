@@ -17,5 +17,5 @@ Bu rest api ile üniversiteleri ve öğrencileri listeleme,  üniversitelerin ve
 git clone https://github.com/nazimaraz/University-Informations/
 cd University-Informations/
 rails db:migrate
-rails serve
+rails server
 ```
